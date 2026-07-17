@@ -155,4 +155,33 @@ button:hover {
     font-family: "Cormorant Garamond", serif;
     letter-spacing: 2px;
     opacity: .9;
+}@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .card h1 {
+        font-size: 45px;
+    }
+
+    .card p {
+        font-size: 19px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .firma {
+        font-size: 24px;
+    }
+
+    .final {
+        font-size: 28px;
+    }
+
 }
