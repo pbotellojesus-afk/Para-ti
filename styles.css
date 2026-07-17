@@ -73,3 +73,20 @@ button:hover {
         transform: translateY(0);
     }
 }
+.card {
+    animation: entrada 2s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
