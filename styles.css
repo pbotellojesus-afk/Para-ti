@@ -109,4 +109,11 @@ button:hover {
     line-height: 1.9;
     text-align: justify;
     color: rgba(255,255,255,.92);
+}.firma{
+    margin-top: 45px;
+    text-align: right;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    font-style: italic;
+    opacity: .85;
 }
