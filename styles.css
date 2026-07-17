@@ -116,4 +116,6 @@ button:hover {
     font-size: 28px;
     font-style: italic;
     opacity: .85;
+}.card p{
+    margin-bottom: 18px;
 }
