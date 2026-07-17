@@ -2,217 +2,146 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
     min-height: 100vh;
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
         url("./IMG_1455.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+    font-family: Arial, sans-serif;
 }
 
 .card {
-    text-align: center;
     width: 100%;
     max-width: 700px;
+
     padding: 50px;
-    background: rgba(255,255,255,0.06);
-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255,255,255,0.2);
+
+    background: rgba(255,255,255,.06);
+    backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255,255,255,.18);
     border-radius: 25px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    z-index: 2;
-    animation: entrada 2s ease forwards;
-    opacity: 0;
-    transform: translateY(30px);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.45);
+
+    animation: entrada 1.5s ease;
 }
 
-h1 {
-    font-size: 70px;
-    letter-spacing: 5px;
-    margin-bottom: 30px;
-    opacity: 0;
-    animation: aparecer 2s forwards;
-}
-
-p {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #d0d0d0;
-    opacity: 0;
-    animation: aparecer 3s forwards;
-}
-
-button {
-    margin-top: 40px;
-    padding: 15px 35px;
-    border-radius: 30px;
-    border: 1px solid white;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: white;
-    color: black;
-}
-
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes entrada {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}.botones {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 35px;
-    flex-wrap: wrap;
-}.card h1{
+.card h1 {
     font-family: "Cormorant Garamond", serif;
     font-size: 64px;
     font-weight: 400;
     letter-spacing: 3px;
-    margin-bottom: 25px;
-}
-
-.card p{
-    font-family:"Cormorant Garamond",serif;
-    font-size:24px;
-    line-height:1.9;
-    text-align:justify;
-    color:rgba(255,255,255,.92);
-    opacity:0;
-    animation: aparecer 1.5s forwards;
-}
-
-.card p:nth-of-type(1){
-    animation-delay:.5s;
-}
-
-.card p:nth-of-type(2){
-    animation-delay:1s;
-}
-
-.card p:nth-of-type(3){
-    animation-delay:1.5s;
-}
-
-.card p:nth-of-type(4){
-    animation-delay:2s;
-}
-
-.card p:nth-of-type(5){
-    animation-delay:2.5s;
-}
-
-.card p:nth-of-type(6){
-    animation-delay:3s;
-}
-
-.card p:nth-of-type(7){
-    animation-delay:3.5s;
-}
-}.firma {
-    margin-top: 60px;
-    text-align: right;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    font-style: italic;
-    opacity: .9;
-}
-}.card p{
-    margin-bottom: 34px;
-}
-    position:absolute;
-    inset:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:1;
-}
-
-.hero h1{
-    font-family:"Cormorant Garamond",serif;
-    font-size:90px;
-    letter-spacing:6px;
-    opacity:1;
-    transition:opacity 2s;
-}
-
-.overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.25);
-}
-
-}.separador{
-    margin: 50px auto 30px;
-    width: 120px;
-    border: none;
-    border-top: 1px solid rgba(255,255,255,.25);
-}
-
-.final {
     text-align: center;
-    font-size: 36px;
-    font-family: "Cormorant Garamond", serif;
-    letter-spacing: 3px;
-    opacity: .9;
+    margin-bottom: 35px;
 }
-    body {
-        padding: 20px;
+
+.card p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    line-height: 1.9;
+    text-align: justify;
+    color: rgba(255,255,255,.92);
+    margin-bottom: 18px;
+
+    opacity: 0;
+    animation: aparecer 1s forwards;
+}
+
+.card p:nth-of-type(1){animation-delay:.3s;}
+.card p:nth-of-type(2){animation-delay:.6s;}
+.card p:nth-of-type(3){animation-delay:.9s;}
+.card p:nth-of-type(4){animation-delay:1.2s;}
+.card p:nth-of-type(5){animation-delay:1.5s;}
+.card p:nth-of-type(6){animation-delay:1.8s;}
+.card p:nth-of-type(7){animation-delay:2.1s;}
+.card p:nth-of-type(8){animation-delay:2.4s;}
+.card p:nth-of-type(9){animation-delay:2.7s;}
+.card p:nth-of-type(10){animation-delay:3s;}
+
+.firma{
+    margin-top:50px;
+    text-align:right;
+    font-family:"Cormorant Garamond", serif;
+    font-size:30px;
+    font-style:italic;
+    opacity:.9;
+}
+
+.separador{
+    width:120px;
+    margin:40px auto 30px;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.25);
+}
+
+.final{
+    text-align:center;
+    font-family:"Cormorant Garamond", serif;
+    font-size:34px;
+    letter-spacing:2px;
+    opacity:.9;
+}
+
+@keyframes entrada{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media (max-width:600px){
+
+    body{
+        padding:20px;
     }
 
-    .card {
-        padding: 30px 20px;
-        border-radius: 20px;
+    .card{
+        padding:30px 22px;
     }
 
-    .card h1 {
-        font-size: 45px;
+    .card h1{
+        font-size:46px;
     }
 
-    .card p {
-        font-size: 19px;
-        line-height: 1.7;
-        text-align: left;
+    .card p{
+        font-size:20px;
+        line-height:1.8;
     }
 
-    .firma {
-        font-size: 24px;
+    .firma{
+        font-size:24px;
     }
 
-    .final {
-        font-size: 28px;
+    .final{
+        font-size:28px;
     }
 
 }
