@@ -105,11 +105,42 @@ button:hover {
 }
 
 .card p{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 24px;
-    line-height: 1.9;
-    text-align: justify;
-    color: rgba(255,255,255,.92);
+    font-family:"Cormorant Garamond",serif;
+    font-size:24px;
+    line-height:1.9;
+    text-align:justify;
+    color:rgba(255,255,255,.92);
+    opacity:0;
+    animation: aparecer 1.5s forwards;
+}
+
+.card p:nth-of-type(1){
+    animation-delay:.5s;
+}
+
+.card p:nth-of-type(2){
+    animation-delay:1s;
+}
+
+.card p:nth-of-type(3){
+    animation-delay:1.5s;
+}
+
+.card p:nth-of-type(4){
+    animation-delay:2s;
+}
+
+.card p:nth-of-type(5){
+    animation-delay:2.5s;
+}
+
+.card p:nth-of-type(6){
+    animation-delay:3s;
+}
+
+.card p:nth-of-type(7){
+    animation-delay:3.5s;
+}
 }.firma{
     margin-top: 45px;
     text-align: right;
