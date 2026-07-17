@@ -141,13 +141,14 @@ button:hover {
 .card p:nth-of-type(7){
     animation-delay:3.5s;
 }
-}.firma{
-    margin-top: 45px;
+}.firma {
+    margin-top: 60px;
     text-align: right;
     font-family: "Cormorant Garamond", serif;
-    font-size: 28px;
+    font-size: 32px;
     font-style: italic;
-    opacity: .85;
+    opacity: .9;
+}
 }.card p{
     margin-bottom: 18px;
 }.hero{
