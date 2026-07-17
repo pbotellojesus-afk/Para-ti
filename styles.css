@@ -143,4 +143,17 @@ button:hover {
 
 .card{
     z-index:2;
+}.separador{
+    margin: 50px auto 30px;
+    width: 120px;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,.25);
+}
+
+.final{
+    text-align: center;
+    font-size: 34px;
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: 2px;
+    opacity: .9;
 }
