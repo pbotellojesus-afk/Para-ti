@@ -22,13 +22,18 @@ body {
 
 .card {
     text-align: center;
-    max-width: 600px;
+    width: 100%;
+    max-width: 700px;
     padding: 50px;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255,255,255,0.08);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255,255,255,0.2);
     border-radius: 25px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    z-index: 2;
+    animation: entrada 2s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
 }
 
 h1 {
@@ -73,11 +78,6 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
-}
-.card {
-    animation: entrada 2s ease forwards;
-    opacity: 0;
-    transform: translateY(30px);
 }
 
 @keyframes entrada {
@@ -142,8 +142,6 @@ button:hover {
     background:rgba(0,0,0,.25);
 }
 
-.card{
-    z-index:2;
 }.separador{
     margin: 50px auto 30px;
     width: 120px;
